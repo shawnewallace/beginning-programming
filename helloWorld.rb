@@ -1,5 +1,10 @@
-def say(message)
-  puts message
+def say(what, toWhom)
+  puts what + " " + toWhom
 end
 
-5.times { say "Hello, World!" }
+
+# counting from 2 to 10
+# non-inclusive
+(2...10).each  { |n|
+  say "(#{n}) Hello, World!", "Shawn"
+}
