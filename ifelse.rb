@@ -12,7 +12,7 @@ else
   puts "Hello Someone else"
 end
 
-name = "Joe"
+name = "Kevin"
 
 if name == "Shawn"
   puts "Hello Shawn"
