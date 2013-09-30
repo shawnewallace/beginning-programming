@@ -14,7 +14,7 @@
 #puts toSort
 
 toSort = [1, 5, 3, 2, 4]
-
+puts "    BEGIN => " + toSort.join(" ")
 #another approach
 swapped = true
 while swapped
@@ -24,7 +24,9 @@ while swapped
       toSort[i], toSort[i+1] = toSort[i+1], toSort[i] # swap values
       swapped = true
     end
+    # response = gets
+    puts "ITERATION => " + toSort.join(" ")
   end
 end
 
-puts toSort
+puts " COMPLETE => " + toSort.join(" ")
