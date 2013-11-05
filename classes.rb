@@ -2,6 +2,10 @@
 
 class Customer
    @@no_of_customers=0
+
+   attr_accessor :cust_id
+   attr_accessor :cust_name
+
    def initialize(id, name, addr)
       @cust_id=id
       @cust_name=name
@@ -18,10 +22,34 @@ class Customer
     end
 end
 
-# Create Objects
+# Create Instances/Object
 cust1=Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
 cust2=Customer.new("2", "Poul", "New Empire road, Khandala")
 
 # Call Methods
-cust1.total_no_of_customers()
-cust2.total_no_of_customers()
+# cust1.total_no_of_customers()
+# cust2.total_no_of_customers()
+# cust1.total_no_of_customers()
+# cust2.total_no_of_customers()
+	
+cust1.display_details()
+cust1.cust_name = "Joe"
+cust1.display_details()
+
+cust2.display_details
+cust2.cust_id = 10
+cust2.display_details
+
+
+
+
+
+
+
+
+
+
+
+
+
+
