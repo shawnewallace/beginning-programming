@@ -6,10 +6,11 @@ class Customer
    attr_accessor :cust_id
    attr_accessor :cust_name
 
-   def initialize(id, name, addr)
+   def initialize(id, name, addr, child)
       @cust_id=id
       @cust_name=name
       @cust_addr=addr
+      @child = child
    end
    def display_details()
       puts "Customer id #@cust_id"
