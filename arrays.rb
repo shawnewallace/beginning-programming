@@ -16,6 +16,10 @@ for i in 0...length
   puts "Clue #{i} is #{clues[i]}"
 end 
 
+(0...length).each do |i|
+	puts "Clue #{i} is #{clues[i]}"
+end
+
 my_vitamins = ['b-12', 'c', 'riboflavin']
  
 my_vitamins.each do |vitamin|
