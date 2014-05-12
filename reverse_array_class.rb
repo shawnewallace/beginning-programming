@@ -1,14 +1,6 @@
 class ArrayReverser
   def execute(array)
-    maxIndex = array.length - 1
-    
-    result = Array.new
-
-    maxIndex.downto(0) do |index|
-      result << array[index]
-    end
-
-    return result
+    return array.reverse
   end
 end
 
