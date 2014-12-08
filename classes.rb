@@ -23,36 +23,28 @@ class Customer
 end
 
 # Create Instances/Object
-# cust1 = Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
-# cust2 = Customer.new("2", "Poul", "New Empire road, Khandala")
+cust1 = Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
+cust2 = Customer.new("2", "Paul", "New Empire road, Khandala")
 
 # Call Methods
-# cust1.total_no_of_customers()
-# cust2.total_no_of_customers()
-# cust1.total_no_of_customers()
-# cust2.total_no_of_customers()
+cust1.total_no_of_customers()
+cust2.total_no_of_customers()
+cust1.total_no_of_customers()
+cust2.total_no_of_customers()
 	
-# cust1.display_details()
-# # cust1.cust_name = "Joe"
-# # cust1.display_details()
+cust3 = Customer.new("46", "me","myhouse")
+cust3.total_no_of_customers()
 
-# cust2.display_details
-# # cust2.cust_id = 10
-# # cust2.display_details
+cust1.display_details()
+cust1.cust_name = "Joe"
+cust1.display_details()
 
-# cust1.total_no_of_customers()
-# cust2.total_no_of_customers()
+cust2.display_details
+cust2.cust_id = 10
+cust2.display_details
 
-
-
-
-
+cust1.total_no_of_customers()
+cust2.total_no_of_customers()
 
 
-
-
-
-
-
-
-
+cust3.cust_addr = "shawn"

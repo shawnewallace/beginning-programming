@@ -1,16 +1,35 @@
-toSort = [1, 5, 3, 2, 4]
+toSort = []
 
+1000.times{
+  toSort << Random.rand()
+}
+
+puts toSort
+gets
+
+count = 0
+
+puts "BEGIN"
+#puts toSort
 swapped = true
 while swapped
 	swapped = false
-	for i in (0..toSort.length - 2)
-		if(toSort[i] > toSort[i + 1])
+  (toSort.length - 1).downto(1) { |i|
+    count = count + 1
+		if(toSort[i] < toSort[i - 1])
 			temp = toSort[i]
-			toSort[i] = toSort[i + 1]
-			toSort[i + 1] = temp
+			toSort[i] = toSort[i - 1]
+			toSort[i - 1] = temp
 			swapped = true
+
+      # puts "SWAPPED"
+      # puts toSort
+      #gets
+
 		end
-	end
+  }
 end
 
 puts toSort
+
+puts "it took #{count} tries"
